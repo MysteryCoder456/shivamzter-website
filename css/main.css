@@ -129,6 +129,14 @@ body {
     }
 }
 
+.active {
+    color: var(--elements) !important;
+}
+
+.active-1 {
+    color: var(--text-color);
+}
+
 .text-main {
     font-family: nimbus;
     color: var(--text-color) !important;
