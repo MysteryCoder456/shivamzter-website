@@ -1,0 +1,348 @@
+body {
+    background-color: #000 !important;
+    z-index: -5;
+}
+
+#landing {
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.landing-bg {
+    z-index: -6 !important;
+}
+
+.landing-bg::after {
+    z-index: -1;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    bottom: 400px;
+    width: 100%;
+    height: 100vh;
+    content: "";
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.07886904761904767) 57%);
+}
+
+.landing-bg::before {
+    z-index: -3;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    bottom: 400px;
+    width: 100%;
+    height: 100vh;
+    content: "";
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.815) 57%);
+}
+
+.landing-bg-img {
+    z-index: -10;
+    position: fixed;
+}
+
+.text-main-1 {
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0) !important;
+    -webkit-text-stroke: 1px #fff !important;
+}
+
+.landing-text {
+    max-width: 40rem;
+    z-index: -1;
+    display: block;
+    margin: auto;
+    width: 100%;
+    top: 50vh;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.cont-land-text {
+    z-index: -2;
+    text-align: center;
+    background-image: radial-gradient(
+        circle,
+        rgba(217, 158, 48, 0.096) 52%,
+        rgba(191, 101, 23, 0.192) 100%
+    ) !important;
+    border-radius: 4px;
+    -webkit-backdrop-filter: blur(400px);
+    backdrop-filter: blur(400px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.blocks {
+    z-index: -3;
+}
+
+.glass {
+    z-index: -1;
+    position: relative;
+    top: 52vh;
+    left: 10%;
+    transform: scale(0.7);
+}
+
+.glass-1 {
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: block-bounce;
+    animation-timing-function: ease-in-out;
+}
+
+.glass-2 {
+    z-index: -1;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    clip-path: url(#svgPath);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: block-bounce;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes block-bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.iron-block {
+    z-index: -3;
+    position: fixed;
+    top: 0;
+    transform: scale(0.7);
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: iron-bounce;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes iron-bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.rcopper-block {
+    z-index: -3;
+    position: fixed;
+    right: 0;
+    transform: scale(0.7);
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: rcop-bounce;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rcop-bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.gold-ore {
+    z-index: -3;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: block-bounce;
+    animation-timing-function: ease-in-out;
+}
+
+@media screen and (min-width: 1201px) {
+    .gold-ore {
+        position: fixed;
+        top: 10%;
+        right: 30%;
+    }
+}
+
+.copper {
+    z-index: -3;
+    position: fixed;
+    top: 40%;
+    right: 50%;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: iron-bounce;
+    animation-timing-function: ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .glass,
+    .copper {
+        display: none;
+    }
+
+    .rcopper-block {
+        bottom: 0;
+    }
+
+    .gold-ore {
+        position: fixed;
+        bottom: 30%;
+    }
+}
+
+@-webkit-keyframes mouse-scroll {
+    0% {
+        top: 10%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 30%;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes mouse-scroll {
+    0% {
+        top: 10%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 30%;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes mouse-scroll {
+    0% {
+        top: 10%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 30%;
+        opacity: 0;
+    }
+}
+
+@keyframes mouse-scroll {
+    0% {
+        top: 10%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 30%;
+        opacity: 0;
+    }
+}
+
+.scroll-msg-container {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 108px;
+    margin-top: -54px;
+    margin-left: -30px;
+    transform: scale(0.5);
+    transition: all 200ms ease-in-out;
+}
+
+.scroll-msg-container[data-scrolled="true"] {
+    bottom: -20%;
+}
+
+.scroll-msg-inner {
+    width: 52px;
+    height: 100px;
+    position: relative;
+    border-radius: 34px;
+    border: 4px solid #fff;
+}
+
+.scroll-msg-wheel {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-animation: mouse-scroll 0.9s infinite;
+    -moz-animation: mouse-scroll 0.9s infinite;
+    -o-animation: mouse-scroll 0.9s infinite;
+    animation: mouse-scroll 0.9s infinite;
+}
+
+#about {
+    background-color: white !important;
+}
+
+#about, #projects {
+    min-height: 20vh;
+    background-color: rgb(0, 0, 0);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.page-link {
+    font-size: 20px !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+}

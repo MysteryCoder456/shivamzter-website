@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Main-->
+        <title>Shivamzter | Minecraft Texture Packs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a7f1387219.js" crossorigin="anonymous"></script>
+        <!--Meta-->
+        <meta name="description" content="Shivamzter is making Minecraft Texture packs. Checkout the home page showcasing the projects and provides general information about me.">
+        <link rel="canonical" href="https://shivamzter.com/">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Shivamzter | Minecraft Texture Packs">
+        <meta property="og:description" content="Shivamzter is making Minecraft Texture packs. Checkout the home page showcasing the projects and provides general information about me.">
+        <meta property="og:url" content="https://shivamzter.com/">
+        <meta property="og:site_name" content="Shivamzter">
+        <meta property="article:modified_time" content="2022-06-21T15:44:29+00:00">
+        <meta property="og:image" content="https://shivamzter.com/wp-content/uploads/2021/09/Slogo.png">
+        <meta property="og:image:width" content="2048">
+        <meta property="og:image:height" content="2048">
+        <meta property="og:image:type" content="image/png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:label1" content="Est. reading time">
+        <meta name="twitter:data1" content="2 minutes">
+        <!--Other-->
+        <script>
+            $(function () {
+                var dataId = $('.navbar-bg').attr("data-blur");
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 300) {
+                      $('.navbar-bg').attr('data-blur', "true");
+                    } else {
+                      $('.navbar-bg').attr('data-blur', "false");
+                    }
+                });
+                var dataId = $('.scroll-msg-container').attr("data-scrolled");
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 250) {
+                      $('.scroll-msg-container').attr('data-scrolled', "true");
+                    } else {
+                      $('.scroll-msg-container').attr('data-scrolled', "false");
+                    }
+                });
+              });
+        </script>
+    </head>
+    <header>
+        <div class="container-fluid navbar-bg fixed-top" data-blur="false">
+            <div class="nav-cen">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                    <a class="navbar-brand text-main" href="#">SHIVAMZTER</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#projects" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="nav-link dropdown-item" href="https://shivamzter.com/simplista/">Simplista</a></li>
+                                <li><a class="nav-link dropdown-item" href="https://shivamzter.com/roundista/">Roundista</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#projects" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Installation
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="nav-link dropdown-item" href="https://shivamzter.com/simplista/installation/">Simplista</a></li>
+                                <li><a class="nav-link dropdown-item" href="https://shivamzter.com/roundista/installation/">Roundista</a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-link" href="https://shivamzter.com/gallery/" target="_blank">Gallery</a>
+                        <a class="nav-link navlink active" href="https://www.patreon.com/shivamzter?fan_landing=true" target="_blank"><i class="fa-brands fa-patreon"></i></a>
+                        <a class="nav-link navlink" href="https://store.shivamzter.com/" target="_blank"><img src="img/gumroad.png" height="24px"></a>
+                        <a class="nav-link navlink active" href="https://discord.gg/pnsXe3udbs" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div id="landing">
+            <div class="landing-bg">
+                <img src="img/landing-bg.png" class="landing-bg-img">
+            </div>
+            <div class="landing-text cont-land-text" style="max-width: 40rem;">
+                <span class="text-main display-1 text-main-1">SHIVAMZTER</span>
+            </div>
+            <div class="blocks container-fluid">
+                <div class="glass">
+                    <img src="img/glasss.png" class="glass-1 img-fluid"> 
+                    <img src="img/gloverlay.svg" class="glass-2 img-fluid"> 
+                    <svg height="0" width="0">
+                        <defs>
+                            <clipPath id="svgPath">
+                                <path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M157.6 37c-.9.3-2.9 2.4-4.4 4.6s-3.3 4.7-4 5.5-3.4 4.3-6 7.9l-4.7 6.4-.5-4.9-.5-4.9L134 56c-1.9 2.5-3.8 4.6-4.2 4.8-.5.2-.8.9-.8 1.5s-2.1 3.6-4.8 6.6c-2.6 3.1-6.6 8.1-8.8 11.1-2.3 3-6.6 8.9-9.7 13-6.3 8.5-16.8 22.4-24.3 32-4.7 6.1-9.8 12.7-14.7 19.4-1.2 1.6-4.4 5.7-7 9-2.7 3.4-5.3 6.8-5.7 7.6s-1.1 8.7-1.4 17.5c-.4 8.8-1.1 24.1-1.6 34-1.3 23.7-1.8 35.2-2.5 51-.3 7.1-.8 16.4-1 20.5-.3 4.1-.7 12.7-1 19s-1.4 29-2.5 50.5c-3.7 75.2-3.5 68.9-1.4 67.7 1-.6 3.9-2.6 6.4-4.5 2.4-2 4.7-3.4 5-3.2.4.2.4 2.4 0 4.8-.6 4.4.2 8.6 1.7 8.8 4.8.5 8.8.8 14 .9 3.5.1 6.1.6 5.8 1-.2.4-4.1 3.1-8.5 6s-8 5.6-8 6 4.2 1 9.3 1.4c5 .4 11.5.9 14.2 1.1 2.8.3 11.3.9 19 1.5 12.6.9 28 2 46.5 3.5 13.7 1.1 32.8 2.5 39.5 3 3.9.3 21.6 1.6 39.5 3 17.9 1.3 35.7 2.7 39.5 3 3.9.3 15.5 1.2 26 2l19 1.5 13.5-5.1c7.4-2.7 15.1-5.6 17-6.4 25.6-10.2 24.8-10 36.2-10 14.8 0 15.1-1.4.5-2.7-2.5-.3 26.6-11.9 58.3-23.3 3.6-1.3 6.4-2.7 6.3-3.2-.1-.4-4.5-1.2-9.8-1.7-5.2-.5-9.5-1.3-9.5-1.7 0-.5.7-.9 1.5-.9 1.5 0 20.7-7.3 23.7-9 1-.6 2.2-1 2.8-1s3.1-1 5.6-2.1l4.5-2.2-.6-14.4c-.3-8-.8-17.5-1-21.1-.2-3.7-.6-12.8-1-20.2-.3-7.4-.8-16.2-1-19.5s-.7-12.3-1-20c-.8-19-2-43.8-3-60.5-.3-4.1-.7-12.9-1-19.5-.8-17.2-1.4-30.8-2-40-1.1-18.4-2.6-51.9-2.9-63.1-.1-3.4-.4-4-1.8-3.6-1 .2-1.8.8-1.8 1.3s-.7.9-1.5.9c-1.1 0-1.5-1.2-1.5-4.8 0-6.8-1.7-9.4-6.2-9.8-2-.2-5.6-.8-8-1.4l-4.2-1.2 3.2-2.6c1.8-1.5 3.2-3 3.2-3.3 0-.6-4.6-1.8-9.5-2.4-2.1-.3-44.5-8.4-60.5-11.5-5.2-1.1-11.3-2.2-13.5-2.5s-5.3-1-7-1.5c-1.6-.5-5.9-1.3-9.5-1.9s-7.8-1.3-9.4-1.6c-19.4-3.9-40.4-8-46.1-8.9-1.1-.2-9-1.7-17.5-3.4-15.2-2.9-31.1-6-36-6.9-3-.5-36.4-6.9-43.5-8.3-15.3-3.1-18.4-3.6-19.9-3zm-9.1 124c6.6 1.1 12.2 2 12.5 2s.4 3 .3 6.7c-.1 3.8-.2 8.5-.3 10.6v3.7l-4.2-.5c-6.8-.9-17.1-2.5-19.8-3l-2.5-.5.3-10.5c.2-5.8.6-10.5 1-10.5s6.1.9 12.7 2zM318 372.1c.8 0 2.7.3 4.3.6l2.7.5v25l-7.7-.7c-4.3-.3-9-.8-10.5-1.1l-2.7-.5-.3-12.6-.3-12.5 6.5.7c3.6.3 7.2.7 8 .6z"/>
+                            </clipPath>
+                        </defs>
+                    </svg> 
+                </div>
+                <img src="img/raw-copper.png" class="rcopper-block">
+                <img src="img/iron_block.png" class="iron-block img-fluid" height="400px">
+                <img src="img/gold_ore.png" class="gold-ore" height="400px">
+                <img src="img/copper.png" class="copper" height="350px">
+            </div>
+            <div class="scroll-msg-container" data-scrolled="false">
+                <div class="scroll-msg-inner">
+                  <div class="scroll-msg-wheel">
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container" style="max-width: 60rem;">
+                <p class="text-main display-1" style="    color: black;">ABOUT</p>
+                <p class="text-sub-2" style="    color: black;">
+                    A home-schooled boy who’s learning procedural texturing and making Minecraft Texture Packs. It all started back in 2016 when I had just started playing Minecraft and later made a Simple Texture Pack which soon got some attention on Planet Minecraft, But I recently decided to overhaul the said Texture Pack and remake it in the best way possible. Currently working on multiple projects and trying to build a community out of them.
+                </p>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="container" style="max-width: 60rem;">
+                <p class="text-main display-1">PROJECTS</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/simplista.png" class="card-img-top" alt="Simplista">
+                            <div class="card-header fs-2">SIMPLISTA</div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a type="button" class="btn btn-warning">SIMPLISTA <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/roundsita.png" class="card-img-top" alt="Roundista">
+                            <div class="card-header fs-2">ROUNDISTA</div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a type="button" class="btn btn-outline-warning">ROUNDISTA <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/stylizta.png" class="card-img-top" alt="Stylizta">
+                            <div class="card-header fs-2">STYLIZTA</div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a type="button" class="btn btn-light">STYLIZTA <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+
+        </div>
+    </body>
+    <footer>
+        <div class="container d-flex justify-content-center">
+            <ul class="pagination pagination-sm">
+                <li class="page-item">
+                    <a class="page-link" href="https://www.patreon.com/shivamzter?fan_landing=true" target="_blank"><i class="fa-brands fa-patreon"></i></a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://store.shivamzter.com/" target="_blank"><img src="img/gumroad.png" height="24spx"></a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://www.instagram.com/shivamzter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://tiktok.com/shivamzter" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://www.youtube.com/shivamzter" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://discord.gg/shivamzter" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="container d-flex justify-content-center text-main fs-3" style="    color: black;">
+            SHIVAMZTER.COM
+        </div>
+        <div class="container d-flex justify-content-center test-sub text-main" style="    color: black;">
+            “Minecraft” is a trademark of Mojang. This site is not affiliated with Mojang or Microsoft.
+        </div>
+    </footer>
+</html>
