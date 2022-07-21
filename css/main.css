@@ -153,16 +153,9 @@ body {
 
 .card-main {
     border-radius: 4px !important;
-    border: 0px #ffc107 solid !important;
+    border: 0px !important;
     color: white;
-    background-color: transparent !important;
-    background-image: radial-gradient(
-        circle,
-        rgba(217, 158, 48, 0.096) 52%,
-        rgba(191, 101, 23, 0.192) 100%
-    ) !important;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    background-color: var(--foreground-color) !important;
 }
 
 .card-header {
