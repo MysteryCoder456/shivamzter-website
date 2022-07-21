@@ -2,7 +2,7 @@
     z-index: -3;
     min-height: 100vh;
     position: relative;
-    background-image: url('../img/landing-bg.png');
+    background-image: url(../img/landing-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,12 +15,15 @@
     min-height: 100vh;
 }
 
-.card-landing, .card-header-landing {
+.card-landing,
+.card-header-landing {
     background-color: rgba(0, 0, 0, 0) !important;
-    border: 0px rgba(0, 0, 0, 0) solid !important;
+    border: 0 rgba(0, 0, 0, 0) solid !important;
 }
 
-#about, #projects, #contact {
+#about,
+#projects,
+#contact {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: var(--background-color);

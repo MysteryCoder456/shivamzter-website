@@ -26,14 +26,13 @@ body {
 }
 
 ::-moz-selection {
-    /* Code for Firefox */
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
+    color: #000;
+    background: #fff;
 }
 
 ::selection {
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
+    color: #000;
+    background: #fff;
 }
 
 * {
@@ -64,14 +63,14 @@ body {
 
 .navbar-bg[data-blur="true"] {
     background-color: #111114;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.459) !important;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.459) !important;
 }
 
 @media screen and (max-width: 991px) {
     .navbar-bg {
         background-color: #111114;
     }
-    
+
     .nav-link {
         background-color: #111114 !important;
     }
@@ -98,7 +97,7 @@ body {
 
 .nav-link {
     font-family: gt;
-    color: rgb(218, 218, 218) !important;
+    color: #dadada !important;
 }
 
 .dropdown-item {
@@ -109,11 +108,11 @@ body {
 
 .dropdown-menu {
     background-color: #08080abd !important;
-    border: 0px black solid !important;
+    border: 0 #000 solid !important;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     transition: all 250ms ease-in;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.459) !important;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.459) !important;
 }
 
 .dropdown-menu[data-blur="true"] {
@@ -138,7 +137,7 @@ body {
 }
 
 .active-1 {
-    color: var(--text-color);
+    color: white !important;
 }
 
 .text-main {
@@ -158,12 +157,12 @@ body {
 
 .card-main {
     border-radius: 4px !important;
-    border: 0px !important;
-    color: white;
+    border: 0 !important;
+    color: #fff;
     background-color: var(--foreground-color) !important;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
     position: relative;
-    bottom: 0px;
+    bottom: 0;
     transition: all 250ms ease-in-out;
 }
 
@@ -190,7 +189,6 @@ body {
     background-color: var(--elements) !important;
     color: var(--background-color) !important;
 }
-
 
 @-webkit-keyframes mouse-scroll {
     0% {
