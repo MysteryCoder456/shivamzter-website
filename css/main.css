@@ -69,7 +69,11 @@ body {
 
 @media screen and (max-width: 991px) {
     .navbar-bg {
-        background-color: var(--background-color);
+        background-color: #111114;
+    }
+    
+    .nav-link {
+        background-color: #111114 !important;
     }
 }
 
