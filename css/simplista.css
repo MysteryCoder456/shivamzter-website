@@ -29,7 +29,6 @@
 
 .card-grid-auto {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.459);
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
