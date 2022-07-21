@@ -124,7 +124,7 @@
     animation: mouse-scroll 0.9s infinite;
 }
 
-#about, #projects, #contact, footer {
+#about, #projects, #contact {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: var(--background-color);
