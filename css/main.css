@@ -3,7 +3,7 @@ body {
 }
 
 :root {
-    --background-color: #08080a;
+    --background-color: #23232B;
     --foreground-color: #23232b;
     --element-bg: #464652;
     --elements: #ffc107;
@@ -25,7 +25,8 @@ body {
     src: url("../fonts/GT\ America\ Regular.ttf");
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
 }
@@ -103,16 +104,16 @@ body {
 }
 
 .dropdown-menu {
-    background-color: #08080abd !important; 
+    background-color: #08080abd !important;
     border: 0px black solid !important;
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     transition: all 250ms ease-in;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.459) !important;
 }
 
 .dropdown-menu[data-blur="true"] {
-    background-color: var(--background-color) !important;  
+    background-color: var(--background-color) !important;
 }
 
 @media screen and (max-width: 990px) {
@@ -124,7 +125,7 @@ body {
     }
 
     .dropdown-menu {
-        background-color: var(--foreground-color) !important;  
+        background-color: var(--foreground-color) !important;
     }
 }
 
@@ -148,11 +149,9 @@ body {
     border: 0px #ffc107 solid !important;
     color: white;
     background-color: transparent !important;
-    background-image: radial-gradient(
-        circle,
-        rgba(217, 158, 48, 0.096) 52%,
-        rgba(191, 101, 23, 0.192) 100%
-    ) !important;
+    background-image: radial-gradient(circle,
+            rgba(217, 158, 48, 0.096) 52%,
+            rgba(191, 101, 23, 0.192) 100%) !important;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
