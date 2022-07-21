@@ -156,7 +156,7 @@ body {
     border-radius: 4px !important;
     border: 0px #ffc107 solid !important;
     color: white;
-    background-color: transparent !important;
+    background-color: var(--element-bg);
     background-image: radial-gradient(circle,
             rgba(217, 158, 48, 0.096) 52%,
             rgba(191, 101, 23, 0.192) 100%) !important;
