@@ -60,7 +60,7 @@
   background-image: url('../img/simplista/card-grid-6.png');
 }
 
-#normals, #spec, #models, #pricing {
+#normals, #spec, #models, #downloads {
   z-index: 1;
   padding-top: 2rem;
   padding-bottom: 2rem;
