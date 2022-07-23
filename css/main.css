@@ -1,13 +1,13 @@
-body {
-    background-color: var(--background-color) !important;
-}
-
 :root {
     --background-color: #1a1a20;
     --foreground-color: #23232b;
     --element-bg: #464652;
     --elements: #ffc107;
     --text-color: #f7f7f5;
+}
+
+body {
+    background-color: var(--background-color) !important;
 }
 
 @font-face {
@@ -259,6 +259,7 @@ body {
 }
 
 .scroll-msg-container {
+    z-index: -2;
     position: absolute;
     bottom: 10%;
     left: 50%;
