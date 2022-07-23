@@ -11,6 +11,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/a7f1387219.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <!--Meta-->
         <meta name="description" content="Shivamzter is making Minecraft Texture packs. Checkout the home page showcasing the projects and provides general information about me.">
         <link rel="canonical" href="https://shivamzter.com/">
@@ -46,12 +47,12 @@
 
                 $('.pricing-more').click(function () {
                     $('.pricing-more').hide();
-                    $('.pricing-cards-more').attr('data-cardhide', "false");
+                    $('.pricing-cards-more').attr('data-pricing-hide', "false");
                 });
 
                 $('.expanded-btn').click(function () {
                     $('.pricing-more').show();
-                    $('.pricing-cards-more').attr('data-cardhide', "true");
+                    $('.pricing-cards-more').attr('data-pricing-hide', "true");
                 });
             });
         </script>
@@ -169,8 +170,9 @@
             </div>
         </div>
         <div id="pricing">
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center">
+            <div class="container text-center">
+                <span class="text-main display-1">DOWNLOADS</span>
+                <div class="row d-flex justify-content-center text-start">
                     <div class="col-sm-auto pricing-1" style="padding-bottom: 2em;">
                         <div class="card card-main pricing-cards" style="height: 100%;">
                             <div class="card-header">
@@ -179,11 +181,11 @@
                             </div>
                             <div class="card-body">
                                 <div class="container price-cont text-main">
-                                    <i class="fa-solid fa-xmark"></i> 55 BLOCKS
+                                    <i class="fa-solid fa-upload"></i> Occasional Updates
                                 </div>
                                 <br>
                                 <div class="container price-cont text-main">
-                                    <i class="fa-solid fa-upload"></i> Maintanence Updates
+                                    <i class="fa-solid fa-xmark"></i> 55 Blocks
                                 </div>
                                 <br>
                                 <div class="container price-cont text-main">
@@ -217,7 +219,11 @@
                                 </div>
                                 <br>
                                 <div class="container price-cont text-main">
-                                    <i class="fa-solid fa-cubes"></i> Custom Block Models
+                                    <i class="fa-solid fa-circle-question"></i> Priority Support
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-cube"></i> Block Requests
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -234,25 +240,119 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-auto pricing-cards-more" style="padding-bottom: 2em;" data-cardhide="true">
+                </div>
+            </div>
+            <div class="container pricing-cards-more text-center" data-pricing-hide="true">
+                <span class="text-main display-1">ADDONS</span>
+                <div class="row d-flex justify-content-center text-start">
+                    <div class="col-sm-auto pricing-cards-more" style="padding-bottom: 2em;">
                         <div class="card card-main pricing-cards">
+                            <div class="card-header">
+                                <span class="text-main h2">GUI ADDON</span>
+                                <span class="text-main h4" style="background-color: white; border-radius: 4px; color: black !important; padding-left: 12px; padding-right: 12px;">FREE</span>
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <div class="container price-cont text-main">
+                                    <i class="bi bi-menu-button-wide-fill"></i> Button Interface
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="bi bi-grid-3x3"></i> Inventory Interface
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                   <i class="fa-solid fa-panorama"></i> Menu Panorama
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="bi bi-file-font"></i> Custom Font
+                                 </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn" href="https:hii.com/" target="_blank" disabled>DOWNLOAD</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-auto pricing-cards-more" style="padding-bottom: 2em;" data-cardhide="true">
-                        <div class="card card-main pricing-cards">
+                    <div class="col-sm-auto pricing-cards-more" style="padding-bottom: 2em;">
+                        <div class="card card-main pricing-cards" style="height: 100%;">
+                            <div class="card-header">
+                                <span class="text-main h2">MODEL ADDON</span>
+                                <span class="text-main h4" style="background-color: white; border-radius: 4px; color: black !important; padding-left: 12px; padding-right: 12px;">FREE</span>
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-cubes"></i> 3D Models
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-list"></i> Rails, Ladder, Doors etc..
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn" href="https:hii.com/" target="_blank" disabled>DOWNLOAD</button>
                             </div>
                         </div>
                     </div>
-                    <div class="d-grid gap-2 pricing-cards-more expanded-btn" style="max-width: 1340px;" data-cardhide="true">
-                        <button class="btn" type="button">CLOSE EXPANDED BUNDLES</button>
+                </div>
+            </div>
+            <div class="container pricing-cards-more text-center" data-pricing-hide="true">
+                <span class="text-main display-1">BUNDLES</span>
+                <div class="row d-flex justify-content-center text-start">
+                    <div class="col-sm-auto pricing-cards-more" style="padding-bottom: 2em;">
+                        <div class="card card-main pricing-cards" style="height: 100%;">
+                            <div class="card-header">
+                                <span class="text-main h2">ENTHUSIAST</span>
+                                <span class="text-main h4" style="background-color: var(--elements); border-radius: 4px; color: var(--background-color) !important; padding-left: 12px; padding-right: 12px;">BUNDLE</span>
+                                <span class="text-main h4" style="background-color: white; border-radius: 4px; color: black !important; padding-left: 12px; padding-right: 12px;">£2.80/m</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-box-open"></i> Simplista Premium
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-box-open"></i> Roundista 256x
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-upload"></i> Regular Updates
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a type="button" class="btn" href="https:hii.com/" target="_blank">DOWNLOAD</a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-sm-auto pricing-cards-more" style="padding-bottom: 2em;">
+                        <div class="card card-main pricing-cards" style="height: 100%;">
+                            <div class="card-header">
+                                <span class="text-main h2">MADMAN</span>
+                                <span class="text-main h4" style="background-color: var(--elements); border-radius: 4px; color: var(--background-color) !important; padding-left: 12px; padding-right: 12px;">BUNDLE</span>
+                                <span class="text-main h4" style="background-color: white; border-radius: 4px; color: black !important; padding-left: 12px; padding-right: 12px;">£2.80/m</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-box-open"></i> Simplista Premium
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-box-open"></i> Roundista 256x + 512x
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-upload"></i> Regular Updates
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a type="button" class="btn" href="https:hii.com/" target="_blank">DOWNLOAD</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-grid gap-2 pricing-cards-more expanded-btn" data-pricing-hide="true">
+                    <button class="btn" type="button">CLOSE EXPANDED</button>
                 </div>
             </div>
         </div>
@@ -292,7 +392,7 @@
                 </li>
             </ul>
         </div>
-        <div class="container d-flex justify-content-center text-main fs-3" style="    color: black;"> &copy; SHIVAMZTER.COM </div>
-        <div class="container d-flex justify-content-center test-sub text-main" style="    color: black;"> “Minecraft” is a trademark of Mojang. This site is not affiliated with Mojang or Microsoft. </div>
+        <div class="container d-flex justify-content-center text-main fs-3" style="color: black;"> &copy; SHIVAMZTER.COM </div>
+        <div class="container d-flex justify-content-center test-sub text-main" style="color: black;"> “Minecraft” is a trademark of Mojang. This site is not affiliated with Mojang or Microsoft. </div>
     </footer>
 </html>
