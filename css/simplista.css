@@ -135,3 +135,66 @@
 .pricing-cards-more[data-pricing-hide="true"] {
   display: none !important;
 }
+
+.btn-disc {
+  border: 1px #5865F2 solid !important;
+  color: #5865F2 !important;
+  font-family: nimbus !important;
+}
+
+.btn-disc:hover {
+  background-color: #5865F2 !important;
+  color: var(--text-color) !important;
+}
+
+.btn-cf {
+  border: 1px #f16436 solid !important;
+  color: #f16436 !important;
+  font-family: nimbus !important;
+  fill: #f16436;
+}
+
+.btn-cf:hover {
+  background-color: #f16436 !important;
+  color: var(--text-color) !important;
+  fill: white;
+}
+
+.btn-mcpedl {
+  border: 1px #03aa30 solid !important;
+  color: #03aa30 !important;
+  font-family: nimbus !important;
+  fill: #03aa30;
+}
+
+.btn-mcpedl:hover {
+  background-color: #03aa30 !important;
+  color: var(--text-color) !important;
+  fill: white;
+}
+
+.btn-patreon {
+  border: 1px #F46454 solid !important;
+  color: #F46454 !important;
+  font-family: nimbus !important;
+  fill: #F46454;
+}
+
+.btn-patreon:hover {
+  background-color: #F46454 !important;
+  color: var(--text-color) !important;
+  fill: white;
+}
+
+.btn-gr {
+  border: 1px #F9CB04 solid !important;
+  color: #F9CB04 !important;
+  font-family: nimbus !important;
+  fill: #F9CB04;
+}
+
+.btn-gr:hover {
+  background-color: #F9CB04 !important;
+  color: var(--background-color) !important;
+  fill: var(--background-color);
+}

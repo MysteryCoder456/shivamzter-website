@@ -187,13 +187,13 @@ body {
     background-color: transparent !important;
 }
 
-.btn {
+.btn-main {
     border: 1px var(--elements) solid !important;
     color: var(--elements) !important;
     font-family: nimbus !important;
 }
 
-.btn:hover {
+.btn-main:hover {
     background-color: var(--elements) !important;
     color: var(--background-color) !important;
 }
@@ -300,6 +300,18 @@ body {
     -moz-animation: mouse-scroll 0.9s infinite;
     -o-animation: mouse-scroll 0.9s infinite;
     animation: mouse-scroll 0.9s infinite;
+}
+
+a {
+    color: inherit !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.modal-content {
+    background-color: var(--background-color) !important;
 }
 
 footer {
