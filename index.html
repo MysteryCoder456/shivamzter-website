@@ -36,17 +36,10 @@
                     if (scroll >= 300) {
                         $('.navbar-bg').attr('data-blur', "true");
                         $('.dropdown-menu').attr('data-blur', "true");
+                        $('.scroll-msg-container').attr('data-scrolled', "true");
                     } else {
                         $('.navbar-bg').attr('data-blur', "false");
                         $('.dropdown-menu').attr('data-blur', "false");
-                    }
-                });
-
-                $(window).scroll(function() {
-                    var scrolled_mouse = $(window).scrollTop();
-                    if (scrolled_mouse >= 350) {
-                        $('.scroll-msg-container').attr('data-scrolled', "true");
-                    } else {
                         $('.scroll-msg-container').attr('data-scrolled', "false");
                     }
                 });
