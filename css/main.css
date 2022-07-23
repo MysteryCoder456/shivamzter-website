@@ -183,6 +183,10 @@ body {
     font-family: gt-2;
 }
 
+.list-group-item {
+    background-color: transparent !important;
+}
+
 .btn {
     border: 1px var(--elements) solid !important;
     color: var(--elements) !important;

@@ -94,3 +94,25 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 576px) {
+  .pricing-cards {
+    max-width: 20rem;
+  }
+}
+
+.pricing-more:hover {
+  cursor: pointer;
+}
+
+.pricing-cards-more[data-cardhide="true"] {
+  display: none;
+}
+
+.price-cont {
+  background-color: var(--element-bg);
+  border-radius: 4px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.041);
+}
