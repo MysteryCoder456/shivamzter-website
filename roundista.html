@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Main-->
+        <title>Shivamzter | Minecraft Texture Packs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/roundista.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a7f1387219.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!--Meta-->
+        <meta name="description" content="A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM.">
+        <link rel="canonical" href="https://shivamzter.com/simplista">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Simplista">
+        <meta property="og:description" content="A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM.">
+        <meta property="og:url" content="https://shivamzter.com/simplista">
+        <meta property="og:site_name" content="Simplista">
+        <meta property="article:modified_time" content="2022-06-21T15:44:29+00:00">
+        <meta property="og:image" content="https://shivamzter.com/wp-content/uploads/2021/09/Slogo.png">
+        <meta property="og:image:width" content="2048">
+        <meta property="og:image:height" content="2048">
+        <meta property="og:image:type" content="image/png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:label1" content="Est. reading time">
+        <meta name="twitter:data1" content="2 minutes">
+        <!--Other-->
+        <script>
+            $(function() {
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 300) {
+                        $('.navbar-bg').attr('data-blur', "true");
+                        $('.dropdown-menu').attr('data-blur', "true");
+                        $('.scroll-msg-container').attr('data-scrolled', "true");
+                    } else {
+                        $('.navbar-bg').attr('data-blur', "false");
+                        $('.dropdown-menu').attr('data-blur', "false");
+                        $('.scroll-msg-container').attr('data-scrolled', "false");
+                    }
+                });
+
+                $('.pricing-more').click(function () {
+                    $('.pricing-more').hide();
+                    $('.pricing-cards-more').attr('data-pricing-hide', "false");
+                });
+
+                $('.expanded-btn').click(function () {
+                    $('.pricing-more').show();
+                    $('.pricing-cards-more').attr('data-pricing-hide', "true");
+                });
+            });
+        </script>
+    </head>
+    <header>
+        <div class="container-fluid navbar-bg fixed-top" data-blur="false">
+            <div class="nav-cen">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-main" href="https://www.shivamzter.com/">SHIVAMZTER</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="https://www.shivamzter.com/">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#projects" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Projects </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink" data-blur="false">
+                                        <li>
+                                            <a class="nav-link dropdown-item" href="simplista.html">Simplista</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link dropdown-item active" href="roundista.html">Roundista</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Installation </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink" data-blur="false">
+                                        <li>
+                                            <a class="nav-link dropdown-item" href="installation/simplista.html" data-blur="false">Simplista</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link dropdown-item" href="installation/roundista.html">Roundista</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <a class="nav-link" href="gallery.html" target="_blank">Gallery</a>
+                                <a class="nav-link navlink active-1" href="https://www.patreon.com/shivamzter?fan_landing=true" target="_blank">
+                                    <i class="fa-brands fa-patreon"></i>
+                                </a>
+                                <a class="nav-link navlink" href="https://store.shivamzter.com/" target="_blank">
+                                    <img src="img/gumroad.png" height="24px">
+                                </a>
+                                <a class="nav-link navlink active-1" href="https://discord.gg/pnsXe3udbs" target="_blank">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div id="landing">
+            <div class="container">
+                <div class="container-fluid d-flex align-items-center" style="min-height: 100vh;">
+                    <div class="col-sm card-grids" style="overflow: hidden;">
+                        <div class="card-grid">
+                            <div class="card card-grid-auto card-grid-1" style="height: 200px; width: 150px"></div>
+                            <div class="card card-grid-auto card-grid-2" style="width: 300px;"></div>
+                            <div class="card card-grid-auto card-grid-3" style="width: 150px;"></div>
+                            <div class="card card-grid-auto card-grid-4" style="width: 150px; height: 300px;"></div>
+                            <div class="card card-grid-auto card-grid-5" style="width: 300px;"></div>
+                            <div class="card card-grid-auto card-grid-6" style="width: 150px;"></div>
+                        </div>
+                    </div>
+                    <div class="container col-sm landing-text">
+                        <span class="text-main display-1">ROUNDISTA</span>
+                        <p class="text-sub h6">A Themed Texture Pack made from its parent Simplista by upscaling and making pixels round and adding PBR support. The original idea of making the pixels round was by Tem and GrayPixelMC, It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. Custom block models & stuff like CTM is coming soon.</p>
+                    </div>
+                    <div class="scroll-msg-container" data-scrolled="false">
+                        <div class="scroll-msg-inner">
+                            <div class="scroll-msg-wheel"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="normals">
+            <div class="container normals">
+                <div class="row">
+                    <div class="col-sm info-inner normals-1" style="background-image: url(img/simplista/spec.png);"></div>
+                    <div class="col-sm d-flex justify-content-center align-items-center" style="padding: 2rem;">
+                        <div class="card">
+                            <div class="card-header text-main h1">NORMAL MAPS</div>
+                            <div class="card-body">
+                                <div class="card-text text-sub-2">
+                                    Normal maps are a special kind of texture that provides data to shader to how to handle and interect the light on the surface. In Minecraft, you can store- Parallax Occlusion Mapping (POM) which adds height to the textures and Ambient Occlusion (AO) which gives the texture extra details in absence of a light source- in the normal map.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm info-inner normals-2" style="background-image: url(img/simplista/spec.png);"></div>
+                </div>
+            </div>
+        </div>
+        <div id="spec">
+            <div class="container spec">
+                <div class="row">
+                    <div class="col-sm info-inner" style="background-image: url(img/simplista/norm.png);"></div>
+                    <div class="col-sm d-flex justify-content-center align-items-center" style="padding: 2rem;">
+                        <div class="card">
+                            <div class="card-header text-main h1">SPECULAR MAPS</div>
+                            <div class="card-body">
+                                <div class="card-text text-sub-2">
+                                    Specular maps contains smoothness, fresnal (f0), HCM, subsurface scattering, porosity and emissive data which can be used by the shader to give the block it's smoothness, reflectiveness and other unbelievable effects.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="downloads">
+            <div class="container text-center">
+                <span class="text-main display-1">DOWNLOADS</span>
+                <div class="row d-flex justify-content-center text-start">
+                    <div class="col-sm-auto pricing-1" style="padding-bottom: 2em;">
+                        <div class="card card-main pricing-cards" style="height: 100%;">
+                            <div class="card-header">
+                                <span class="text-main h2">ROUNDISTA</span> <span class="text-sub">DEMO</span>
+                                <span class="text-main h4" style="background-color: white; border-radius: 4px; color: black !important; padding-left: 12px; padding-right: 12px;">FREE</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-upload"></i> Occasional Updates
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-xmark"></i> 55 Blocks
+                                    <br>
+                                    <a type="button" class="text-sub-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Click here to view the blocklist</a>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLabel">BLOCKLIST</h5>
+                                              <button type="button" class="fa-solid fa-xmark" data-bs-dismiss="modal" aria-label="Close" style="background-color: transparent; color: white; border: 0px solid;"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <ul class="list-group list-group-flush" style="background-color: var(--foreground-color); border-radius: 4px;">
+                                                    <li class="list-group-item text-sub-2">Grass Block</li>
+                                                    <li class="list-group-item text-sub-2">Stone</li>
+                                                    <li class="list-group-item text-sub-2">
+                                                        <b>Stone Ores :</b>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item text-sub-2">Diamond Ore</li>
+                                                            <li class="list-group-item text-sub-2">lapis Ore</li>
+                                                            <li class="list-group-item text-sub-2">Emerald Ore</li>
+                                                            <li class="list-group-item text-sub-2">Redstone Ore</li>
+                                                            <li class="list-group-item text-sub-2">Gold Ore</li>
+                                                            <li class="list-group-item text-sub-2">Iron Ore</li>
+                                                            <li class="list-group-item text-sub-2">Coal Ore</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-group-item text-sub-2">Stone Bricks</li>
+                                                    <li class="list-group-item text-sub-2">Chiseled Stone Bricks</li>
+                                                    <li class="list-group-item text-sub-2">Smooth Stone Bricks</li>
+                                                    <li class="list-group-item text-sub-2">Sand</li>
+                                                    <li class="list-group-item text-sub-2">Bricks</li>
+                                                    <li class="list-group-item text-sub-2">
+                                                        <b>Planks :</b>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item text-sub-2">Acacia</li>
+                                                            <li class="list-group-item text-sub-2">Birch</li>
+                                                            <li class="list-group-item text-sub-2">Dark Oak</li>
+                                                            <li class="list-group-item text-sub-2">Jungle</li>
+                                                            <li class="list-group-item text-sub-2">Oak</li>
+                                                            <li class="list-group-item text-sub-2">Spruce</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-group-item text-sub-2">
+                                                        <b>Logs + Top :</b>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item text-sub-2">Acacia</li>
+                                                            <li class="list-group-item text-sub-2">Birch</li>
+                                                            <li class="list-group-item text-sub-2">Dark Oak</li>
+                                                            <li class="list-group-item text-sub-2">Jungle</li>
+                                                            <li class="list-group-item text-sub-2">Oak</li>
+                                                            <li class="list-group-item text-sub-2">Spruce</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-group-item text-sub-2">
+                                                        <b>Sandstones :</b>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item text-sub-2">Cut Sandstone</li>
+                                                            <li class="list-group-item text-sub-2">Smooth Sandstone</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-group-item text-sub-2">
+                                                        <b>Leaves :</b>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item text-sub-2">Acacia</li>
+                                                            <li class="list-group-item text-sub-2">Birch</li>
+                                                            <li class="list-group-item text-sub-2">Dark Oak</li>
+                                                            <li class="list-group-item text-sub-2">Jungle</li>
+                                                            <li class="list-group-item text-sub-2">Oak</li>
+                                                            <li class="list-group-item text-sub-2">Spruce</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-group-item text-sub-2">Obsidian</li>
+                                                    <li class="list-group-item text-sub-2">Diamond Block</li>
+                                                    <li class="list-group-item text-sub-2">Lapis Block</li>
+                                                    <li class="list-group-item text-sub-2">Emerald Block</li>
+                                                    <li class="list-group-item text-sub-2">Redstone Block</li>
+                                                    <li class="list-group-item text-sub-2">Gold Block</li>
+                                                    <li class="list-group-item text-sub-2">Iron Block</li>
+                                                    <li class="list-group-item text-sub-2">Coal Block</li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-expand"></i> 64x Textures
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-main">
+                                        DOWNLOADS :
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-disc" href="https://discord.gg/shivamzter" target="_blank"><i class="fa-brands fa-discord"></i> DISCORD</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-cf" href="https://www.curseforge.com/minecraft/texture-packs/roundista" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 53.5" width="30"><path fill-rule="evenodd" d="M0 6.9082l27.9532.0756L26.269 0h73.7449l-.0164 8.1433C87.5 10.6348 78.6726 16.775 74.825 36.34H72.046l-1.5815 4.359h2.3079l3.9906 12.8087H37.961l3.9184-12.8086h2.325l-1.6467-4.359h-2.7642l-5.1516-13.7535C13.5203 21.3437 2.6748 16.9042 0 6.9082zM58.6772 39.062c-3.082-5.6216-5.1058-1.197-11.4454-6.9496-2.4727-2.2436-3.4588-8.8199 2.097-10.8301-2.5255 5.5749 4.0297 7.8558 5.5898 4.6685.709-1.4486 1.6039-4.1204-.9798-5.9518-1.392-.9867-1.9281-3.9125-.7364-5.5388.3837 1.2093 1.5938 2.5013 3.916 1.5411-4.9192-8.1404 2.934-10.9457 6.7104-10.5817-3.9686.441-6.025 3.977-4.2196 7.8269 1.15 2.452 2.9006 3.6589 3.4097 5.6657-1.6952.1263-2.1852.9065-2.1495 2.362.0268 1.0895 2.5496 2.6646 2.9494-.4456 1.175 2.4245-.2407 3.8496-1.0129 4.9984-1.7824 2.6515-.1036 5.4107 2.1097 3.3067.9547-.9074 1.6155-2.5812.4048-5.318 2.229 1.776 4.5057 6.5447.9079 10.677-1.756 2.017-6.9514 1.391-7.551 4.5693z"/></svg> CURSEFORGE</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-mcpedl" href="https://mcpedl.com/roundista-bedrockrtx-texture-pack/" target="_blank">MCPEDL <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-auto pricing-1" style="padding-bottom: 2em;">
+                        <div class="card card-main pricing-cards">
+                            <div class="card-header">
+                                <span class="text-main h2">ROUNDISTA</span> <span class="text-sub">PREMIUM</span>
+                                <span class="text-main h4" style="background-color: white; border-radius: 4px; color: black !important; padding-left: 12px; padding-right: 12px;">£1.30/m</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-upload"></i> Regular Updates
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-plus"></i> 300+ Blocks
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-expand"></i> 64x Textures
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-circle-question"></i> Priority Support
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-cube"></i> Block Requests
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-main">
+                                        DOWNLOADS :
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-disc" href="https://discord.gg/shivamzter" target="_blank"><i class="fa-brands fa-discord"></i> DISCORD</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-patreon" href="https://www.patreon.com/shivamzter" target="_blank"><i class="fa-brands fa-patreon"></i> PATREON</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-gr" href="https://store.shivamzter.com/" target="_blank"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                                width="30" viewBox="0 0 300.000000 291.000000"
+                                                preserveAspectRatio="xMidYMid meet">
+                                               
+                                               <g transform="translate(0.000000,291.000000) scale(0.100000,-0.100000)" stroke="none">
+                                               <path d="M1372 2760 c-500 -42 -948 -368 -1137 -825 -66 -159 -87 -259 -92
+                                               -445 -8 -252 29 -418 138 -632 85 -164 184 -289 325 -407 203 -169 441 -275
+                                               702 -312 108 -15 382 -6 479 16 416 92 755 352 938 716 94 188 135 363 135
+                                               574 0 778 -683 1382 -1488 1315z m396 -604 c205 -67 361 -237 391 -428 l8 -48
+                                               -173 0 -174 0 -6 28 c-12 47 -51 116 -86 149 -60 57 -120 78 -228 78 -84 -1
+                                               -101 -4 -153 -30 -105 -52 -190 -172 -218 -304 -16 -78 -6 -222 20 -296 61
+                                               -171 190 -269 356 -269 148 0 257 89 315 259 11 32 20 62 20 67 0 4 -76 8
+                                               -170 8 l-170 0 0 65 0 65 355 0 355 0 0 -345 0 -345 -155 0 -155 0 -1 208 c-1
+                                               154 -4 198 -11 172 -58 -207 -153 -323 -313 -382 -50 -18 -81 -22 -180 -22
+                                               -103 0 -130 4 -193 26 -193 69 -323 220 -383 444 -30 113 -30 317 0 429 57
+                                               217 202 385 390 455 107 41 168 49 326 46 130 -3 161 -7 233 -30z"/>
+                                               </g>
+                                               </svg> GUMROAD</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-auto pricing-more" style="padding-bottom: 2em;">
+                        <div class="card card-main pricing-cards expand-card" style="height: 100%;">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h2 class="text-main text-center" style="color: var(--background-color) !important;">Click here to view <span style="background-color: var(--background-color); border-radius: 4px; color: var(--elements) !important; padding-left: 12px; padding-right: 12px;">addons</span> & <span style="background-color: var(--background-color); border-radius: 4px; color: var(--elements) !important; padding-left: 12px; padding-right: 12px;">bundled offers</span> <i class="fa-solid fa-arrow-right-long expand-arrow"></i></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container pricing-cards-more text-center" data-pricing-hide="true">
+                <span class="text-main display-1">ADDONS</span>
+                <div class="row d-flex justify-content-center text-start">
+                    <div class="col-sm-auto pricing-cards-more" style="padding-bottom: 2em;">
+                        <div class="card card-main pricing-cards">
+                            <div class="card-header">
+                                <span class="text-main h2">GUI ADDON</span>
+                                <span class="text-main h4" style="background-color: white; border-radius: 4px; color: black !important; padding-left: 12px; padding-right: 12px;">FREE</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="container price-cont text-main">
+                                    <i class="bi bi-menu-button-wide-fill"></i> Button Interface
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="bi bi-grid-3x3"></i> Inventory Interface
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                   <i class="fa-solid fa-panorama"></i> Menu Panorama
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="bi bi-file-font"></i> Custom Font
+                                 </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-main" href="#" target="_blank" disabled>DOWNLOAD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container pricing-cards-more text-center" data-pricing-hide="true">
+                <span class="text-main display-1">BUNDLES</span>
+                <div class="row d-flex justify-content-center text-start">
+                    <div class="col-sm-auto pricing-cards-more" style="padding-bottom: 2em;">
+                        <div class="card card-main pricing-cards" style="height: 100%;">
+                            <div class="card-header">
+                                <span class="text-main h2">ENTHUSIAST</span>
+                                <span class="text-main h4" style="background-color: var(--elements); border-radius: 4px; color: var(--background-color) !important; padding-left: 12px; padding-right: 12px;">BUNDLE</span>
+                                <span class="text-main h4" style="background-color: white; border-radius: 4px; color: black !important; padding-left: 12px; padding-right: 12px;">£2.80/m</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="container price-cont text-main">
+                                    <a href="simplista.html"><i class="fa-solid fa-box-open"></i> Simplista Premium</i></a>
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <a href="roundista.html"><i class="fa-solid fa-box-open"></i> Roundista 128x + 256x</a>
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-upload"></i> Regular Updates
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-patreon" href="https://www.patreon.com/shivamzter" target="_blank"><i class="fa-brands fa-patreon"></i> PATREON</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-gr" href="https://store.shivamzter.com/" target="_blank"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                                width="30" viewBox="0 0 300.000000 291.000000"
+                                                preserveAspectRatio="xMidYMid meet">
+                                               
+                                               <g transform="translate(0.000000,291.000000) scale(0.100000,-0.100000)" stroke="none">
+                                               <path d="M1372 2760 c-500 -42 -948 -368 -1137 -825 -66 -159 -87 -259 -92
+                                               -445 -8 -252 29 -418 138 -632 85 -164 184 -289 325 -407 203 -169 441 -275
+                                               702 -312 108 -15 382 -6 479 16 416 92 755 352 938 716 94 188 135 363 135
+                                               574 0 778 -683 1382 -1488 1315z m396 -604 c205 -67 361 -237 391 -428 l8 -48
+                                               -173 0 -174 0 -6 28 c-12 47 -51 116 -86 149 -60 57 -120 78 -228 78 -84 -1
+                                               -101 -4 -153 -30 -105 -52 -190 -172 -218 -304 -16 -78 -6 -222 20 -296 61
+                                               -171 190 -269 356 -269 148 0 257 89 315 259 11 32 20 62 20 67 0 4 -76 8
+                                               -170 8 l-170 0 0 65 0 65 355 0 355 0 0 -345 0 -345 -155 0 -155 0 -1 208 c-1
+                                               154 -4 198 -11 172 -58 -207 -153 -323 -313 -382 -50 -18 -81 -22 -180 -22
+                                               -103 0 -130 4 -193 26 -193 69 -323 220 -383 444 -30 113 -30 317 0 429 57
+                                               217 202 385 390 455 107 41 168 49 326 46 130 -3 161 -7 233 -30z"/>
+                                               </g>
+                                               </svg> GUMROAD</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-auto pricing-cards-more" style="padding-bottom: 2em;">
+                        <div class="card card-main pricing-cards" style="height: 100%;">
+                            <div class="card-header">
+                                <span class="text-main h2">MADMAN</span>
+                                <span class="text-main h4" style="background-color: var(--elements); border-radius: 4px; color: var(--background-color) !important; padding-left: 12px; padding-right: 12px;">BUNDLE</span>
+                                <span class="text-main h4" style="background-color: white; border-radius: 4px; color: black !important; padding-left: 12px; padding-right: 12px;">£5.30/m</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="container price-cont text-main">
+                                    <a href="simplista.html"><i class="fa-solid fa-box-open"></i> Simplista Premium</i></a>
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <a href="roundista.html"><i class="fa-solid fa-box-open"></i> Roundista 128x + 256x + 512x</a>
+                                </div>
+                                <br>
+                                <div class="container price-cont text-main">
+                                    <i class="fa-solid fa-upload"></i> Regular Updates
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-patreon" href="https://www.patreon.com/shivamzter" target="_blank"><i class="fa-brands fa-patreon"></i> PATREON</a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-grid gap-2">
+                                            <a type="button" class="btn btn-gr" href="https://store.shivamzter.com/" target="_blank"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                                width="30" viewBox="0 0 300.000000 291.000000"
+                                                preserveAspectRatio="xMidYMid meet">
+                                               
+                                               <g transform="translate(0.000000,291.000000) scale(0.100000,-0.100000)" stroke="none">
+                                               <path d="M1372 2760 c-500 -42 -948 -368 -1137 -825 -66 -159 -87 -259 -92
+                                               -445 -8 -252 29 -418 138 -632 85 -164 184 -289 325 -407 203 -169 441 -275
+                                               702 -312 108 -15 382 -6 479 16 416 92 755 352 938 716 94 188 135 363 135
+                                               574 0 778 -683 1382 -1488 1315z m396 -604 c205 -67 361 -237 391 -428 l8 -48
+                                               -173 0 -174 0 -6 28 c-12 47 -51 116 -86 149 -60 57 -120 78 -228 78 -84 -1
+                                               -101 -4 -153 -30 -105 -52 -190 -172 -218 -304 -16 -78 -6 -222 20 -296 61
+                                               -171 190 -269 356 -269 148 0 257 89 315 259 11 32 20 62 20 67 0 4 -76 8
+                                               -170 8 l-170 0 0 65 0 65 355 0 355 0 0 -345 0 -345 -155 0 -155 0 -1 208 c-1
+                                               154 -4 198 -11 172 -58 -207 -153 -323 -313 -382 -50 -18 -81 -22 -180 -22
+                                               -103 0 -130 4 -193 26 -193 69 -323 220 -383 444 -30 113 -30 317 0 429 57
+                                               217 202 385 390 455 107 41 168 49 326 46 130 -3 161 -7 233 -30z"/>
+                                               </g>
+                                               </svg> GUMROAD</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-grid gap-2 pricing-cards-more expanded-btn btn-main" data-pricing-hide="true">
+                    <button class="btn btn-main" type="button">CLOSE EXPANDED</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="container d-flex justify-content-center">
+            <ul class="pagination pagination" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, .5);">
+                <li class="page-item">
+                    <a class="page-link" href="https://www.patreon.com/shivamzter?fan_landing=true" target="_blank">
+                        <i class="fa-brands fa-patreon"></i>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://store.shivamzter.com/" target="_blank">
+                        <img src="img/gumroad.png" height="24spx" style="position: relative; bottom: 2px;">
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://www.instagram.com/shivamzter" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://tiktok.com/shivamzter" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://www.youtube.com/shivamzter" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://discord.gg/shivamzter" target="_blank">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container d-flex justify-content-center text-main fs-3" style="color: black;"> &copy; SHIVAMZTER.COM </div>
+        <div class="container d-flex justify-content-center test-sub text-main" style="color: black;"> “Minecraft” is a trademark of Mojang. This site is not affiliated with Mojang or Microsoft. </div>
+    </footer>
+</html>

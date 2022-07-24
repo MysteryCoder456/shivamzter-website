@@ -1,0 +1,204 @@
+#landing {
+  z-index: -3;
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.801) 40%, rgba(0,0,0,0.07886904761904767) 60%), url('../img/rd-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.card-grid {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.landing-text {
+  text-align: end;
+}
+
+@media screen and (max-width: 767px) {
+  #landing {
+    background-image: url('../img/rd-bg.png');
+  }
+
+  .landing-text {
+    text-align: center;
+  }
+
+  .card-grids {
+    display: none;
+  }
+}
+
+.card-grid-auto {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.459);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-grid-1 {
+  background-image: url('../img/roundista/card-grid-1.png');
+}
+
+.card-grid-2 {
+  background-image: url('../img/roundista/card-grid-2.png');
+}
+
+.card-grid-3 {
+  background-image: url('../img/roundista/card-grid-3.png');
+}
+
+.card-grid-4 {
+  background-image: url('../img/roundista/card-grid-4.png');
+}
+
+.card-grid-5 {
+  background-image: url('../img/roundista/card-grid-5.png');
+}
+
+.card-grid-6 {
+  background-image: url('../img/roundista/card-grid-6.png');
+}
+
+#normals, #spec, #models, #downloads {
+  z-index: 1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--background-color);
+}
+
+.normals, .spec, .models {
+  background-color: var(--foreground-color);
+  border-radius: 4px !important;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.281);
+  min-height: 20rem;
+}
+
+.info-inner {
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20rem;
+}
+
+.normals-1 {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  .normals-1 {
+    display: block;
+  }
+  .normals-2 {
+    display: none;
+  }
+}
+
+.price-cont {
+  background-color: var(--element-bg);
+  border-radius: 4px;
+  padding-left: 30px !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.041);
+}
+
+
+@media screen and (min-width: 768px) {
+  .pricing-cards {
+    max-width: 21rem;
+  }
+}
+
+.expand-card {
+  background-image: radial-gradient(circle, rgba(255,193,7,1) 0%, rgb(232, 151, 0) 100%) !important;
+  min-height: 15rem;
+}
+
+.expand-card:hover {
+  background-image: radial-gradient(circle, rgba(255,193,7,1) 80%, rgb(232, 151, 0) 100%) !important;
+  cursor: pointer;
+}
+
+.expand-arrow {
+  position: relative;
+  left: 0;
+  transition: all 250ms;
+}
+
+.expand-card:hover .expand-arrow {
+  position: relative;
+  left: 10px;
+}
+
+.pricing-cards-more[data-pricing-hide="true"] {
+  display: none !important;
+}
+
+.btn-disc {
+  border: 1px #5865F2 solid !important;
+  color: #5865F2 !important;
+  font-family: nimbus !important;
+}
+
+.btn-disc:hover {
+  background-color: #5865F2 !important;
+  color: var(--text-color) !important;
+}
+
+.btn-cf {
+  border: 1px #f16436 solid !important;
+  color: #f16436 !important;
+  font-family: nimbus !important;
+  fill: #f16436;
+}
+
+.btn-cf:hover {
+  background-color: #f16436 !important;
+  color: var(--text-color) !important;
+  fill: white;
+}
+
+.btn-mcpedl {
+  border: 1px #03aa30 solid !important;
+  color: #03aa30 !important;
+  font-family: nimbus !important;
+  fill: #03aa30;
+}
+
+.btn-mcpedl:hover {
+  background-color: #03aa30 !important;
+  color: var(--text-color) !important;
+  fill: white;
+}
+
+.btn-patreon {
+  border: 1px #F46454 solid !important;
+  color: #F46454 !important;
+  font-family: nimbus !important;
+  fill: #F46454;
+}
+
+.btn-patreon:hover {
+  background-color: #F46454 !important;
+  color: var(--text-color) !important;
+  fill: white;
+}
+
+.btn-gr {
+  border: 1px #F9CB04 solid !important;
+  color: #F9CB04 !important;
+  font-family: nimbus !important;
+  fill: #F9CB04;
+}
+
+.btn-gr:hover {
+  background-color: #F9CB04 !important;
+  color: var(--background-color) !important;
+  fill: var(--background-color);
+}

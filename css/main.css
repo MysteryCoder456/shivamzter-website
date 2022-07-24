@@ -37,7 +37,7 @@ body {
 
 * {
     scrollbar-width: auto;
-    scrollbar-color: #fff;
+    scrollbar-color: var(--elements);
 }
 
 ::-webkit-scrollbar {
@@ -45,13 +45,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #000;
+    background: var(--background-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #fff;
+    background-color: var(--elements);
     border-radius: 4px;
-    border: 3px none #fff;
+    border: 3px none var(--elements);
 }
 
 .navbar-bg {
