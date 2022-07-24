@@ -1,0 +1,12 @@
+#Mon Apr 04 19:30:59 GST 2022
+resourcepackReflectionsEnabled=true
+ssptEmissionMode=1
+shadowMapResolution=4096
+textureAoEnabled=true
+pomEnabled=true
+pomSamples=128
+airTransmittanceHQ=false
+reflectionCaptureEnabled=true
+slopeNormalCalculation=true
+CLOUD_RENDER_LOD=3.0
+directionalLMEnabled=true

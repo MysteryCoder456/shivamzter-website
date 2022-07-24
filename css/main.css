@@ -132,10 +132,6 @@ body {
     }
 }
 
-.active {
-    color: var(--elements) !important;
-}
-
 .active-1 {
     color: white !important;
 }
