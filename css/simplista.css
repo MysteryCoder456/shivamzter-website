@@ -1,6 +1,6 @@
 #landing {
   z-index: -3;
-  background-image: linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0.07886904761904767) 60%), url('../img/simpl-bg.png');
+  background-image: linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0.07886904761904767) 60%), url('../img/simpl-bg.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 767px) {
   #landing {
-    background-image: url('../img/simpl-bg.png');
+    background-image: url('../img/simpl-bg.webp');
   }
 
   .landing-text {
@@ -37,27 +37,27 @@
 }
 
 .card-grid-1 {
-  background-image: url('../img/simplista/card-grid-1.png');
+  background-image: url('../img/simplista/card-grid-1.webp');
 }
 
 .card-grid-2 {
-  background-image: url('../img/simplista/card-grid-2.png');
+  background-image: url('../img/simplista/card-grid-2.webp');
 }
 
 .card-grid-3 {
-  background-image: url('../img/simplista/card-grid-3.png');
+  background-image: url('../img/simplista/card-grid-3.webp');
 }
 
 .card-grid-4 {
-  background-image: url('../img/simplista/card-grid-4.png');
+  background-image: url('../img/simplista/card-grid-4.webp');
 }
 
 .card-grid-5 {
-  background-image: url('../img/simplista/card-grid-5.png');
+  background-image: url('../img/simplista/card-grid-5.webp');
 }
 
 .card-grid-6 {
-  background-image: url('../img/simplista/card-grid-6.png');
+  background-image: url('../img/simplista/card-grid-6.webp');
 }
 
 #normals, #spec, #models, #downloads {
