@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Main-->
+        <title>Shivamzter | Minecraft Texture Packs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/installation.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a7f1387219.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!--Meta-->
+        <meta name="description" content="A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM.">
+        <link rel="canonical" href="https://shivamzter.com/simplista">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Simplista">
+        <meta property="og:description" content="A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM.">
+        <meta property="og:url" content="https://shivamzter.com/simplista">
+        <meta property="og:site_name" content="Simplista">
+        <meta property="article:modified_time" content="2022-06-21T15:44:29+00:00">
+        <meta property="og:image" content="https://shivamzter.com/wp-content/uploads/2021/09/Slogo.webp">
+        <meta property="og:image:width" content="2048">
+        <meta property="og:image:height" content="2048">
+        <meta property="og:image:type" content="image/png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:label1" content="Est. reading time">
+        <meta name="twitter:data1" content="2 minutes">
+        <!--Other-->
+        <script>
+            $(function() {
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 2) {
+                        $('.navbar-bg').attr('data-blur', "true");
+                        $('.dropdown-menu').attr('data-blur', "true");
+                    } else {
+                        $('.navbar-bg').attr('data-blur', "false");
+                        $('.dropdown-menu').attr('data-blur', "false");
+                    }
+                });
+                $('.arr-video').hide();
+                $('.arr-vid').click(function() {
+                    $('.arr-video').toggle();
+                });
+            });
+        </script>
+    </head>
+    <header>
+        <div class="container-fluid navbar-bg fixed-top" data-blur="false">
+            <div class="nav-cen">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-main" href=".https://www.shivamzter.com/">SHIVAMZTER</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="https://www.shivamzter.com/">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#projects" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Projects </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink" data-blur="false">
+                                        <li>
+                                            <a class="nav-link dropdown-item" href="simplista.html">Simplista</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link dropdown-item" href="roundista.html">Roundista</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <a class="nav-link" href="installation.html">Installation</a>
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                                <a class="nav-link navlink active-1" href="https://www.patreon.com/shivamzter?fan_landing=true" target="_blank">
+                                    <i class="fa-brands fa-patreon"></i>
+                                </a>
+                                <a class="nav-link navlink" href="https://store.shivamzter.com/" target="_blank">
+                                    <img src="img/gumroad.webp" height="24px">
+                                </a>
+                                <a class="nav-link navlink active-1" href="https://discord.gg/pnsXe3udbs" target="_blank">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div id="landing" style="padding-top: 4rem; padding-bottom: 2rem;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-4 installation-bar">
+                        <div id="list-example" class="list-group list-group-1 text-main ins-bar text-center">
+                            <a class="list-group-item-1 list-group-item-action-1 list-group-item list-group-item-action" href="#java">INSTALLING JAVA</a>
+                            <a class="list-group-item-1 list-group-item-action-1 list-group-item list-group-item-action" href="#optifine">INSTALLAING OPTIFINE</a>
+                            <a class="list-group-item-1 list-group-item-action-1 list-group-item list-group-item-action" href="#ram">RAM ALLOCATIONG</a>
+                            <a class="list-group-item-1 list-group-item-action-1 list-group-item list-group-item-action" href="#shader">INSTALLING SHADER</a>
+                            <a class="list-group-item-1 list-group-item-action-1 list-group-item list-group-item-action" href="#rp">INSTALLING RESOURCEPACK</a>
+                            <a class="list-group-item-1 list-group-item-action-1 list-group-item list-group-item-action" href="#shader-settings">SHADER SETTINGS</a>
+                        </div>
+                    </div>
+                    <div id="installation" class="col-8">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                            <div id="java" class="card card-main">
+                                <div class="card-header h1 text-main"> INSTALLING JAVA </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-sub-2"> Go to <b>
+                                            <a href="https://www.java.com/en/" target="_blank">https://www.java.com</a>
+                                        </b> and click on <button class="btn btn-success" style="border-radius: 4px; cursor: inherit;">Download Java</button> then again on the next page. </li>
+                                    <li class="list-group-item text-sub-2"> Run the downloaded <code>jre-&lt;version&gt;.exe</code> file. </li>
+                                    <li class="list-group-item text-sub-2"> Follow the steps and complete the installation. </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div id="optifine" class="card card-main">
+                                <div class="card-header h1 text-main"> INSTALLING OPTIFINE </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-sub-2"> Go to <b>
+                                            <a href="https://optifine.net/downloads.php" target="_blank">https://optifine.net/downloads.php</a>
+                                        </b> and choose your desired version (preferably the latest) and choose <button class="btn btn-ofdwn" style="cursor: inherit;">Download</button> or <span style="background-color: white; color: #517edd; padding-left: 5px; padding-right: 5px; position: relative; top: 3px;">(Mirror)</span>, and <button class="btn btn-ofdwn" style="cursor: inherit;">Download</button> again in the next page. </li>
+                                    <li class="list-group-item text-sub-2"> Run the downloaded <code>OptiFine_&lt;version&gt;.jar</code> file. </li>
+                                    <li class="list-group-item text-sub-2"> Click on Install, and you're done. </li>
+                                    <li class="list-group-item text-sub-2 arr-vid">
+                                        <a href="#">If you're having trouble installing, watch this video <i class="fa-solid fa-arrow-right-long arr-expand"></i>
+                                        </a>
+                                        <br>
+                                        <iframe class="arr-video" src="https://www.youtube.com/embed/nTq3Nf5DvNg" style="width: 100%; height: 20rem;"></iframe>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div id="ram" class="card card-main">
+                                <div class="card-header h1 text-main"> RAM ALLOCATION (OPTIONAL) </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-sub-2"> Open the Minecraft launcher and head to Intallations. </li>
+                                    <li class="list-group-item text-sub-2"> Hover over the OptiFine installation and click on the 3 dots, and then edit. </li>
+                                    <li class="list-group-item text-sub-2"> Click on <code style="background-color: #464646; color: white;">MORE OPTIONS <i class="fa-solid fa-chevron-down"></i>
+                                        </code> and then under <b>
+                                            <code style="background-color: #464646; color: white;">JVM ARGUMENTS</code>
+                                        </b> replace <span style="background-color: black; padding-left: 10px; padding-right: 10px; border-radius: 4px; position: relative; top: 3px;">-Xmx2G</span> with <span style="background-color: black; padding-left: 10px; padding-right: 10px; border-radius: 4px; position: relative; top: 3px;">-Xmx4G</span>. <ul class="list-group">
+                                            <li class="list-group-item text-sub-2" style="border: none;">
+                                                <i>Never allocate more than half your system's ram, and no more than 6gb max.</i>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div id="shader" class="card card-main">
+                                <div class="card-header h1 text-main"> SHADER INSTALLATION </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-sub-2"> We recommend you to use LabPBR compliant shaders, you can find them here <a href="https://wiki.shaderlabs.org/wiki/LabPBR_Supported_Packs" target="_blank">https://wiki.shaderlabs.org/wiki/LabPBR_Supported_Packs</a>. </li>
+                                    <li class="list-group-item text-sub-2"> Download your desired shader, the download links will be under the links tab. </li>
+                                    <li class="list-group-item text-sub-2"> Launch minecraft with the OptiFine installation. </li>
+                                    <li class="list-group-item text-sub-2">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb"> Navigate to &nbsp; <li class="breadcrumb-item">Options</li>
+                                                <li class="breadcrumb-item">Video Settings</li>
+                                                <li class="breadcrumb-item">Shaders</li>
+                                            </ol>
+                                        </nav>
+                                    </li>
+                                    <li class="list-group-item text-sub-2"> Click on <button class="btn btn-secondary text-sub" style="cursor: inherit;">Open Shaders Folder</button> to open the shaderpacks folder, then drag and drop the downloaded <code>&lt;shader-name&gt;.zip</code> file into the shaderpacks folder. </li>
+                                    <li class="list-group-item text-sub-2"> Go back ingame, and select the shader. </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div id="shader" class="card card-main">
+                                <div class="card-header h1 text-main"> RESOURCEPACK INSTALLATION </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-sub-2"> 
+                                        After you've downloaded our packs.
+                                    </li>
+                                    <li class="list-group-item text-sub-2">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb"> Navigate to &nbsp; <li class="breadcrumb-item">Options</li>
+                                                <li class="breadcrumb-item">Resource Pack</li>
+                                            </ol>
+                                        </nav>
+                                    </li>
+                                    <li class="list-group-item text-sub-2"> Click on <button class="btn btn-secondary text-sub" style="cursor: inherit;">Open Pack Folder</button> to open the resourcepacks folder, then drag and drop the downloaded <code>&lt;pack-name-version&gt;.zip</code> file into the resourcepacks folder. </li>
+                                    <li class="list-group-item text-sub-2"> Go back ingame, and select the resource pack.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="container d-flex justify-content-center">
+            <ul class="pagination pagination" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, .5);">
+                <li class="page-item">
+                    <a class="page-link" href="https://www.patreon.com/shivamzter?fan_landing=true" target="_blank">
+                        <i class="fa-brands fa-patreon"></i>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://store.shivamzter.com/" target="_blank">
+                        <img src="img/gumroad.webp" height="24spx" style="position: relative; bottom: 2px;">
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://www.instagram.com/shivamzter" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://tiktok.com/shivamzter" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://www.youtube.com/shivamzter" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="https://discord.gg/shivamzter" target="_blank">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container d-flex justify-content-center text-main fs-3" style="color: black;"> &copy; SHIVAMZTER.COM </div>
+        <div class="container d-flex justify-content-center test-sub text-main" style="color: black;"> “Minecraft” is a trademark of Mojang. This site is not affiliated with Mojang or Microsoft. </div>
+    </footer>
+</html>

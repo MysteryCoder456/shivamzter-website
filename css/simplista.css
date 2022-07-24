@@ -187,14 +187,14 @@
 }
 
 .btn-gr {
-  border: 1px #F9CB04 solid !important;
-  color: #F9CB04 !important;
+  border: 1px #ff90e8 solid !important;
+  color: #ff90e8 !important;
   font-family: nimbus !important;
-  fill: #F9CB04;
+  fill: #ff90e8;
 }
 
 .btn-gr:hover {
-  background-color: #F9CB04 !important;
+  background-color: #ff90e8 !important;
   color: var(--background-color) !important;
   fill: var(--background-color);
 }

@@ -58,7 +58,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     transition: all 250ms ease-in;
     -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
 }
 
 .navbar-bg[data-blur="true"] {
@@ -312,6 +312,13 @@ a:hover {
 
 .modal-content {
     background-color: var(--background-color) !important;
+}
+
+code {
+    background-color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
 }
 
 footer {
