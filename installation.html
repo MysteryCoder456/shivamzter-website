@@ -48,8 +48,8 @@
                     $('.arr-video').toggle();
                 });
 
-                $('#roundista').hide();
-                $('#stylizta').hide();
+                $('#rd-stl').hide();
+                $('#stl-bsl').hide();
 
                 $('#sl-tab').click(function () {
                     $('#sl-tab').addClass('nav-tab-active');
@@ -57,8 +57,8 @@
                     $('#stl-tab').removeClass('nav-tab-active');
 
                     $('#simplista').show();
-                    $('#roundista').hide();
-                    $('#stylizta').hide();
+                    $('#rd-stl').hide();
+                    $('#stl-bsl').hide();
                 });
 
                 $('#rd-tab').click(function () {
@@ -68,8 +68,8 @@
 
                     
                     $('#simplista').hide();
-                    $('#roundista').show();
-                    $('#stylizta').hide();
+                    $('#rd-stl').show();
+                    $('#stl-bsl').hide();
                 });
 
                 $('#stl-tab').click(function () {
@@ -79,8 +79,8 @@
 
                     
                     $('#simplista').hide();
-                    $('#roundista').hide();
-                    $('#stylizta').show();
+                    $('#rd-stl').show();
+                    $('#stl-bsl').show();
                 });
             });
         </script>
@@ -192,7 +192,7 @@
                             <div id="shader" class="card card-main">
                                 <div class="card-header h1 text-main"> SHADER INSTALLATION </div>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item text-sub-2"> We recommend you to use LabPBR compliant shaders, you can find them here <a href="https://wiki.shaderlabs.org/wiki/LabPBR_Supported_Packs" target="_blank">https://wiki.shaderlabs.org/wiki/LabPBR_Supported_Packs</a>. </li>
+                                    <li class="list-group-item text-sub-2"> We recommend you to use labPBR compliant shaders, you can find them here <a href="https://wiki.shaderlabs.org/wiki/labPBR_Supported_Packs" target="_blank">https://wiki.shaderlabs.org/wiki/labPBR_Supported_Packs</a>. </li>
                                     <li class="list-group-item text-sub-2"> Download your desired shader, the download links will be under the links tab. </li>
                                     <li class="list-group-item text-sub-2"> Launch minecraft with the OptiFine installation. </li>
                                     <li class="list-group-item text-sub-2">
@@ -244,95 +244,221 @@
                                     </li>
                                     <ul id="simplista" class="list-group list">
                                         <li class="list-group-item text-main">Drag and drop the presets in the shaderpacks folder. For the PT version makes sure the <code>.txt</code> file's name matches with that of the shaderpack.</li>
+
                                         <br>    
+
                                         <div class="card">
                                             <div class="card-header text-main h3">
                                                 Kappa v4.2
                                             </div>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Emission Mode : Hardcoded + LabPBR, SSPT : ON, Texture AO : ON<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Emission Mode : Hardcoded + labPBR, SSPT : ON, Texture AO : ON<br>
                                                 </li>
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON</li>
                                                 <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128, slopeNormalCalculation : ON</li>
-                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON, Reflection Capture : ON</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON</li>
                                             </ul>
                                             <div class="card-footer">
                                                 <a href="files/Kappa_v4.2.zip.txt" class="btn btn-main" download>Kappa v4.2</a>
                                             </div>
                                         </div>
+
                                         <br>
+
                                         <div class="card">
                                             <div class="card-header text-main h3">
                                                 KappaPT P15a
                                             </div>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Emission Mode : Hardcoded + LabPBR, SSPT : ON, Texture AO : ON<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Emission Colors ➝ Emission Mode : Hardcoded + labPBR
                                                 </li>
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Direct Light&nbsp;➝ Shadowmap Resolution : 4096<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Texture AO : ON<br>
                                                 </li>
                                                 <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON</li>
-                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128 (Enable slopeNormalCalculation for SubtlePBR)</li>
-                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON, Reflection Capture : ON</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128, slopeNormalCalculation : ON</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON</li>
                                             </ul>
                                             <div class="card-footer">
-                                                <a href="files/Kappa_v4.2.zip.txt" class="btn btn-main" download>KAPPA v4.2</a>
+                                                <a href="files/KappaPT_P15a_2022-7-24_17.35.zip.txt" class="btn btn-main" download>KappaPT P15a</a>
                                             </div>
                                         </div>
+
                                         <br>
+
                                         <div class="card">
                                             <div class="card-header text-main h3">
                                                 Nostalgia v4.0a
                                             </div>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Emission Mode : Hardcoded + LabPBR, SSPT : ON, Texture AO : ON<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Emission Mode : Hardcoded + labPBR, SSPT : ON, Texture AO : ON<br>
                                                 </li>
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Direct Light&nbsp;➝ Shadowmap Resolution : 4096<br>
-                                                </li>
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON</li>
-                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128 (Enable slopeNormalCalculation for SubtlePBR)</li>
-                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON, Reflection Capture : ON</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128, slopeNormalCalculation : ON</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON</li>
                                             </ul>
                                             <div class="card-footer">
-                                                <a href="files/Kappa_v4.2.zip.txt" class="btn btn-main" download>KAPPA v4.2</a>
+                                                <a href="files/Nostalgia_v4.0a.zip.txt" class="btn btn-main" download>Nostalgia v4.0a</a>
                                             </div>
                                         </div>
+
                                         <br>
+
                                         <div class="card">
                                             <div class="card-header text-main h3">
-                                                Nostalgia P7c
+                                                NostalgiaVX P7c
                                             </div>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Emission Mode : Hardcoded + LabPBR, SSPT : ON, Texture AO : ON<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Emission Colors ➝ Emission Mode : Hardcoded + labPBR
                                                 </li>
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Direct Light&nbsp;➝ Shadowmap Resolution : 4096<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Texture AO : ON<br>
                                                 </li>
                                                 <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON</li>
-                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128 (Enable slopeNormalCalculation for SubtlePBR)</li>
-                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON, Reflection Capture : ON</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128, slopeNormalCalculation : ON</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON</li>
                                             </ul>
                                             <div class="card-footer">
-                                                <a href="files/Kappa_v4.2.zip.txt" class="btn btn-main" download>KAPPA v4.2</a>
+                                                <a href="files/NostalgiaVX_P7c_2022-7-24_17.35.zip.txt" class="btn btn-main" download>NostalgiaVX P7c</a>
                                             </div>
                                         </div>
+
                                         <br>
+
                                         <div class="card">
                                             <div class="card-header text-main h3">
-                                                SEUS PTGI HRR 3
+                                                SEUS PTGI HRR 3 (OLDPBR)
                                             </div>
                                             <ul class="list-group list-group-flush">
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Emission Mode : Hardcoded + LabPBR, SSPT : ON, Texture AO : ON<br>
+                                                <li class="list-group-item text-sub-2">Texture Resolution : 64
                                                 </li>
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Direct Light&nbsp;➝ Shadowmap Resolution : 4096<br>
+                                                <li class="list-group-item text-sub-2">Ray Tracing&nbsp;➝ Full Raytrace Reflections: ON, Screen-Space Reflection Tracing: ON, Screen-Space GI Tracing : ON<br>
                                                 </li>
-                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON</li>
-                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128 (Enable slopeNormalCalculation for SubtlePBR)</li>
-                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON, Reflection Capture : ON</li>
+                                                <li class="list-group-item text-sub-2">Surface&nbsp;➝ Smooth Parallax Surface : OFF</li>
                                             </ul>
                                             <div class="card-footer">
-                                                <a href="files/Kappa_v4.2.zip.txt" class="btn btn-main" download>KAPPA v4.2</a>
+                                                <a href="files/SEUS PTGI HRR 3.zip.txt" class="btn btn-main" download>SEUS PTGI HRR 3</a>
                                             </div>
                                         </div>
                                     </ul>
+
+                                    <ul id="rd-stl" class="list-group list">
+                                        <li class="list-group-item text-main">Drag and drop the presets in the shaderpacks folder. For the PT version makes sure the <code>.txt</code> file's name matches with that of the shaderpack.</li>
+
+                                        <br>    
+
+                                        <div class="card">
+                                            <div class="card-header text-main h3">
+                                                Kappa v4.2
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Emission Mode : Hardcoded + labPBR, SSPT : ON, Texture AO : ON<br>
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON</li>
+                                            </ul>
+                                            <div class="card-footer">
+                                                <a href="files/rd-stl/Kappa_v4.2.zip.txt" class="btn btn-main" download>Kappa v4.2</a>
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        <div class="card">
+                                            <div class="card-header text-main h3">
+                                                KappaPT P15a
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Emission Colors ➝ Emission Mode : Hardcoded + labPBR
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Texture AO : ON<br>
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON</li>
+                                            </ul>
+                                            <div class="card-footer">
+                                                <a href="files/rd-stl/KappaPT_P15a_2022-7-24_17.35.zip.txt" class="btn btn-main" download>KappaPT P15a</a>
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        <div class="card">
+                                            <div class="card-header text-main h3">
+                                                Nostalgia v4.0a
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON<br>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Emission Mode : Hardcoded + labPBR, SSPT : ON, Texture AO : ON<br>
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON</li>
+                                            </ul>
+                                            <div class="card-footer">
+                                                <a href="files/rd-stl/Nostalgia_v4.0a.zip.txt" class="btn btn-main" download>Nostalgia v4.0a</a>
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        <div class="card">
+                                            <div class="card-header text-main h3">
+                                                NostalgiaVX P7c
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Emission Colors ➝ Emission Mode : Hardcoded + labPBR
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Indirect Light&nbsp;➝ Texture AO : ON<br>
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Lighting&nbsp;➝ Directional Lightmaps : ON</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Parallax Occlusion Mapping&nbsp;➝ Enabled : ON, Samples : 128</li>
+                                                <li class="list-group-item text-sub-2">Terrain&nbsp;➝ Reflections&nbsp;➝ Resourcepack Reflections : ON</li>
+                                            </ul>
+                                            <div class="card-footer">
+                                                <a href="files/rd-stl/NostalgiaVX_P7c_2022-7-24_17.35.zip.txt" class="btn btn-main" download>NostalgiaVX P7c</a>
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        <div class="card">
+                                            <div class="card-header text-main h3">
+                                                SEUS PTGI HRR 3 (OLDPBR)
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item text-sub-2">Texture Resolution : &lt;Select Pack Res&gt;
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Ray Tracing&nbsp;➝ Full Raytrace Reflections: ON, Screen-Space Reflection Tracing: ON, Screen-Space GI Tracing : ON<br>
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Surface&nbsp;➝ Smooth Parallax Surface : OFF</li>
+                                            </ul>
+                                            <div class="card-footer">
+                                                <a href="files/rd-stl/SEUS PTGI HRR 3.zip.txt" class="btn btn-main" download>SEUS PTGI HRR 3</a>
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        
+                                        <div id="stl-bsl" class="card">
+                                            <div class="card-header text-main h3">
+                                                BSL v8.1.03
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item text-sub-2">Material ➝ Advanced Materials : ON
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Material ➝ Specular & Reflections ➝ Rough Reflection : ON, Albedo Tinted Hardcoded Metal : ON
+                                                </li>
+                                                <li class="list-group-item text-sub-2">Material ➝ Normals & Parallax ➝ Directional Lightmap : ON
+                                                </li>
+                                            </ul>
+                                            <div class="card-footer">
+                                                <a href="files/BSL_v8.1.03.zip.txt" class="btn btn-main" download>BSL v8.1.03</a>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    
                                 </ul>
                             </div>
                         </div>

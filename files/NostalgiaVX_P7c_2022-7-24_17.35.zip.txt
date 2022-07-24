@@ -1,7 +1,7 @@
-#Mon Apr 04 19:30:59 GST 2022
+#Sun Jul 24 22:51:06 GST 2022
 resourcepackReflectionsEnabled=true
-ssptEmissionMode=1
 textureAoEnabled=true
+labEmissionMode=1
 pomEnabled=true
 pomSamples=128
-directionalLMEnabled=true
+slopeNormalCalculation=true

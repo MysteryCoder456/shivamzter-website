@@ -1,0 +1,6 @@
+#Sun Jul 24 22:58:02 GST 2022
+resourcepackReflectionsEnabled=true
+labEmissionMode=1
+pomEnabled=true
+slopeNormalCalculation=true
+textureAOEnabled=true
