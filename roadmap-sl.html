@@ -10,6 +10,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/a7f1387219.js" crossorigin="anonymous"></script>
+        <script src="roadmap-config.js"></script>
         <!--Meta-->
         <meta name="description" content="Shivamzter is making Minecraft Texture packs. Checkout the home page showcasing the projects and provides general information about me.">
         <link rel="canonical" href="https://shivamzter.com/">
@@ -31,27 +32,42 @@
         <script>
             $(function() {
                 $(window).scroll(function() {
+
                     var scroll = $(window).scrollTop();
+
                     if (scroll >= 2) {
                         $('.navbar-bg').attr('data-blur', "true");
                         $('.dropdown-menu').attr('data-blur', "true");
                         $('.scroll-msg-container').attr('data-scrolled', "true");
                         $('.search-bar').attr('data-sticky', "true");
-                    } else {
+                    } 
+                    
+                    else {
                         $('.navbar-bg').attr('data-blur', "false");
                         $('.dropdown-menu').attr('data-blur', "false");
                         $('.scroll-msg-container').attr('data-scrolled', "false");
                         $('.search-bar').attr('data-sticky', "false");
                     }
                 });
-
+                
                 $("#myInput").on("keyup", function() {
+
                     var value = $(this).val().toLowerCase();
+
                     $("#myList li").filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                     });
                 });
 
+                var block_percent = ((sl_block / 861) * 100).toFixed(2).concat('%');
+                var item_percent = ((sl_item / 861) * 100).toFixed(2).concat('%');
+                var entity_percent = ((sl_entity / 861) * 100).toFixed(2).concat('%');
+
+                $('.progress-bar').css("width", block_percent);
+                $('#progress-per').replaceWith(block_percent);
+                console.log("Blocks:", block_percent);
+                console.log("Items:", item_percent);
+                console.log("Entities:", entity_percent);
             });
         </script>
     </head>
@@ -110,6 +126,9 @@
                 <li>Third item</li>
                 <li>Fourth</li>
               </ul>
+              <div class="progress">
+                <div class="progress-bar text-main"  role="progressbar" aria-label="Basic example" aria-valuemin="0" aria-valuemax="100"><span id="progress-per">0</span></div>
+              </div>
         </section>
     </body>
     <footer>

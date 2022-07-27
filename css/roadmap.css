@@ -22,3 +22,7 @@
     left: 0;
     right: 0;
 }
+
+.progress-bar {
+    width: 1%;
+}
