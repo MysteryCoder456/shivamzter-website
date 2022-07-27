@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html>
     <head>
         <!--Main-->
         <title>Shivamzter | Minecraft Texture Packs</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/roadmap.css">
         <link rel="stylesheet" href="css/main.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -33,16 +32,26 @@
             $(function() {
                 $(window).scroll(function() {
                     var scroll = $(window).scrollTop();
-                    if (scroll >= 300) {
+                    if (scroll >= 2) {
                         $('.navbar-bg').attr('data-blur', "true");
                         $('.dropdown-menu').attr('data-blur', "true");
                         $('.scroll-msg-container').attr('data-scrolled', "true");
+                        $('.search-bar').attr('data-sticky', "true");
                     } else {
                         $('.navbar-bg').attr('data-blur', "false");
                         $('.dropdown-menu').attr('data-blur', "false");
                         $('.scroll-msg-container').attr('data-scrolled', "false");
+                        $('.search-bar').attr('data-sticky', "false");
                     }
                 });
+
+                $("#myInput").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#myList li").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+
             });
         </script>
     </head>
@@ -58,7 +67,7 @@
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="https://www.shivamzter.com/" style="color: var(--elements) !important;">Home</a>
+                                    <a class="nav-link" aria-current="page" href="https://www.shivamzter.com/">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#projects" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Projects </a>
@@ -89,84 +98,19 @@
         </div>
     </header>
     <body>
-        <div id="landing">
-            <div class="landing-text">
-                <div class="card card-landing">
-                    <div class="card card-header text-main text-center display-1 card-header-landing"> SHIVAMZTER <div class="card-subtitle text-sub h6 text-center"> Home of Simplista, Roundista and Stylizta </div>
-                    </div>
-                </div>
-            </div>
-            <div class="scroll-msg-container" data-scrolled="false">
-                <div class="scroll-msg-inner">
-                    <div class="scroll-msg-wheel"></div>
-                </div>
+        <div id="landing" class="text-center">
+            <div id="search-bar" class="container search-bar" style="max-width: 50rem;">
+                <input id="myInput" class="form-control roadmap-search" type="search" placeholder="Search Blocks..." aria-label="Search">
             </div>
         </div>
-        <div id="about">
-            <div class="container">
-                <div class="text-main display-1"> ABOUT ME </div>
-                <div class="text-sub-2 fs-5"> A home-schooled boy who’s learning procedural texturing and making Minecraft Texture Packs. It all started back in 2016 when I had just started playing Minecraft and later made a Simple Texture Pack which soon got some attention on Planet Minecraft, But I recently decided to overhaul the said Texture Pack and remake it in the best way possible. Currently working on multiple projects and trying to build a community out of them. </div>
-            </div>
-        </div>
-        <div id="projects">
-            <div class="container">
-                <div class="text-main display-1"> PROJECTS </div>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100 card-main">
-                            <img src="img/simplista.webp" class="card-img-top" alt="Simplista">
-                            <div class="card-header fs-2">SIMPLISTA</div>
-                            <div class="card-body">
-                                <p class="card-text"> A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM. </p>
-                            </div>
-                            <div class="card-footer">
-                                <a type="button" class="btn btn-main">SIMPLISTA <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 card-main">
-                            <img src="img/roundsita.webp" class="card-img-top" alt="Roundista">
-                            <div class="card-header fs-2">ROUNDISTA</div>
-                            <div class="card-body">
-                                <p class="card-text"> A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM. </p>
-                            </div>
-                            <div class="card-footer">
-                                <a type="button" class="btn btn-main">ROUNDISTA <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 card-main">
-                            <img src="img/stylizta.webp" class="card-img-top" alt="Stylizta">
-                            <div class="card-header fs-2">STYLIZTA</div>
-                            <div class="card-body">
-                                <p class="card-text"> A Simple Texture Pack made by reducing color noise from albedo minecraft textures and adding PBR support. It supports various stuff like- Subsurface Scattering, Porosity, HCM, Ambient Occlusion and Emission. It also includes custom block models & stuff like CTM. </p>
-                            </div>
-                            <div class="card-footer">
-                                <a type="button" class="btn btn-main">STYLIZTA <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="contact">
-            <div class="container">
-                <div class="text-main display-1"> CONTACT </div>
-                <div class="row">
-                    <div class="col"> Hi </div>
-                    <div class="col">
-                        <div class="card bg-dark" style="box-shadow: 0px 0px 16px rgba(0, 0, 0, .5);">
-                            <iframe src="https://ptb.discord.com/widget?id=784077752633393172&theme=dark" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <section id="roadmap-blocks" class="container">
+            <ul id="myList">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth</li>
+              </ul>
+        </section>
     </body>
     <footer>
         <div class="container d-flex justify-content-center">
