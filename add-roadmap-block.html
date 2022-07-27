@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <!--Main-->
+        <title>Add roadmap block</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/add-roadmap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a7f1387219.js" crossorigin="anonymous"></script>
+        <!--Other-->
+        <script>
+            function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="main" class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="card card-main">
+                <div class="card-header text-main display-6">ADD ROADMAP ITEMS</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-center text-sub" style="padding: 1rem;">
+                            Choose page to add : &nbsp;
+                            <select class="form-select text-sub-2 text-center" aria-label="Default select example" style="background-color: var(--element-bg); max-width: 20rem;" required>
+                                <option selected>--Choose Page--</option>
+                                <option value="1">Simplista</option>
+                                <option value="2">Roundista</option>
+                                <option value="3">Stylizta</option>
+                              </select>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Block Name</span>
+                            <input type="text" class="form-control" placeholder="Enter Block Name..." aria-describedby="basic-addon1" required>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">#</span>
+                            <input type="text" class="form-control" placeholder="Enter Block ID..." aria-describedby="basic-addon1" required>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">ALT</span>
+                            <input type="text" class="form-control" placeholder="Alt names- separate with comma- [wood, oak, plank]" aria-describedby="basic-addon1" required>
+                        </div>
+                    </li>
+                    <li class="list-group-item text-sub-2 text-center">
+                        Upload Thumbnail <i style="color: var(--element-bg);">*Min: 500x500*</i>
+                        <br>
+                        <input type='file' onchange="readURL(this);" accept="image/*" required>
+                        <img id="blah" src="http://placehold.it/180" class="img-fluid" style="max-width: 200px;">
+                    </li>
+                    <li class="list-group-item text-sub-2 text-center">
+                        Upload Carousel Images (<span id="image-no">0</span>/10) <i style="color: var(--element-bg);">*Optional*</i>
+                        <br>
+                        <input type="file" class="btn btn-secondary" accept="image/*">
+                    </li>
+                </ul>
+                <div class="card-footer d-grid">
+                    <button class="btn btn-outline-info">ADD</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
