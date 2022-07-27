@@ -54,7 +54,7 @@
 
                     var value = $(this).val().toLowerCase();
 
-                    $("#myList li").filter(function() {
+                    $("#myList aside").filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                     });
                 });
@@ -114,21 +114,116 @@
         </div>
     </header>
     <body>
-        <div id="landing" class="text-center">
+        <div id="landing" class="text-center container">
+            <div class="progress">
+                <div class="progress-bar text-main"  role="progressbar" aria-label="Basic example" aria-valuemin="0" aria-valuemax="100"><span id="progress-per">0</span></div>
+              </div>
             <div id="search-bar" class="container search-bar" style="max-width: 50rem;">
                 <input id="myInput" class="form-control roadmap-search" type="search" placeholder="Search Blocks..." aria-label="Search">
             </div>
         </div>
         <section id="roadmap-blocks" class="container">
-            <ul id="myList">
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-                <li>Fourth</li>
-              </ul>
-              <div class="progress">
-                <div class="progress-bar text-main"  role="progressbar" aria-label="Basic example" aria-valuemin="0" aria-valuemax="100"><span id="progress-per">0</span></div>
-              </div>
+            <div id="myList" class="row text-center" style="grid-template-rows: 1fr, 1fr, 1fr; gap: 1rem;">
+
+
+                <aside class="col">
+                    <div class="card card-main col-card" style="width: 18rem;" type="button" data-bs-toggle="modal" data-bs-target="#quartz">
+                        <img src="img/roadmap-sl/quartz/quartz-chis.png" class="card-img-top">
+                        <div class="card-header text-main">Chiseled Quartz</div>
+                        <span id="alt-results" style="display: none;">chiseled quartz marble</span>
+                      </div>
+                </aside>
+
+
+                <div class="modal fade" id="quartz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-main" id="exampleModalLabel">Quartz</h5>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="quartz-carousel" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#quartz-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#cquartz-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#quartz-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="img/roadmap-sl/quartz/quartz1.png" class="d-block w-100">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/roadmap-sl/quartz/quartz2.png" class="d-block w-100">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/roadmap-sl/quartz/quartz3.png" class="d-block w-100">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#quartz-carousel" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#quartz-carousel" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                <aside class="col">
+                    <div class="card card-main col-card" style="width: 18rem;" type="button" data-bs-toggle="modal" data-bs-target="#planks">
+                        <img src="img/roadmap-sl/planks/oak_planks.png" class="card-img-top">
+                        <div class="card-header text-main">Oak Plank</div>
+                        <span id="alt-results" style="display: none;">oak plank wood</span>
+                      </div>
+                </aside>
+
+                <div class="modal fade" id="planks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-main" id="exampleModalLabel">Planks</h5>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="planks-carousel" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#quartz-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#cquartz-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#quartz-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="img/roadmap-sl/planks/planks1.png" class="d-block w-100">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/roadmap-sl/planks/planks2.png" class="d-block w-100">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/roadmap-sl/planks/planks3.png" class="d-block w-100">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#planks-carousel" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#planks-carousel" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </section>
     </body>
     <footer>

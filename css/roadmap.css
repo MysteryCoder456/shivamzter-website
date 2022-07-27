@@ -17,6 +17,7 @@
 }
 
 .search-bar {
+    z-index: 999;
     margin-top: -1rem;
     position: fixed;
     left: 0;
@@ -25,4 +26,8 @@
 
 .progress-bar {
     width: 1%;
+}
+
+.col-card {
+    margin: 0 auto;
 }
