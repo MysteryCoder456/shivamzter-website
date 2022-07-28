@@ -25,7 +25,9 @@ class RoadmapItem(models.Model):
 
 class RoadmapCarouselImage(models.Model):
     image = models.ImageField(null=False, upload_to="roadmap-carousel")
-    roadmap_item = models.ForeignKey(RoadmapItem, on_delete=models.CASCADE)
+    roadmap_item = models.ForeignKey(
+        RoadmapItem, on_delete=models.CASCADE, related_name="carousel_images"
+    )
 
     def __str__(self):
         return f"RoadmapCarouselImage<id={self.id} roadmap_item_id={self.roadmap_item.id}>"  # type: ignore
