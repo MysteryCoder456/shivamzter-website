@@ -2,5 +2,6 @@ django
 djangorestframework
 markdown
 django-filter
+pillow
 flake8
 black
