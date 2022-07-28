@@ -12,8 +12,8 @@ class RoadmapItem(models.Model):
     page = models.TextField(
         choices=[(choice.name, choice.value) for choice in PageChoices]
     )
-    block_name = models.TextField(null=False)
+    block_name = models.CharField(null=False, max_length=100)
     block_id = models.IntegerField(null=False)
-    alt_names = models.TextField(null=True)
+    alt_names = models.CharField(null=True, max_length=100)
     thumbnail = models.ImageField(null=False)
     # TODO: Carousel images...
