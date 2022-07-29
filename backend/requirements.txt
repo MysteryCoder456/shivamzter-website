@@ -3,5 +3,7 @@ djangorestframework
 markdown
 django-filter
 pillow
+gunicorn
+python-dotenv
 flake8
 black

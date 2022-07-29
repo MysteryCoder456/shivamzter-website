@@ -10,7 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
+
+PUBLIC_BACKEND_HOST = "*"  # change this to the host when deploying
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,14 +26,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = (
-    "django-insecure-%d-0c2jg4_jb@9n+%!fp_gji3qeu)y=#iw)v7_@4q^sfn(y*9c"
-)
+SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ["DJANGO_DEBUG"] == "true"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["django", PUBLIC_BACKEND_HOST]
+
+if DEBUG:
+    ALLOWED_HOSTS.extend(["127.0.0.1", "localhost"])
 
 
 # Application definition
@@ -80,7 +87,7 @@ WSGI_APPLICATION = "backend.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "NAME": BASE_DIR / "db" / "db.sqlite3",
     }
 }
 
@@ -119,6 +126,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
+STATIC_ROOT = "/static/"
 STATIC_URL = "static/"
 
 # Default primary key field type
@@ -128,3 +136,16 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_ROOT = BASE_DIR / "site-media"
 MEDIA_URL = "/site-media/"
+
+CSRF_COOKIE_SECURE = not DEBUG
+CSRF_TRUSTED_ORIGINS = [f"https://{PUBLIC_BACKEND_HOST}", "https://django"]
+
+if DEBUG:
+    CSRF_TRUSTED_ORIGINS.extend(
+        [
+            "https://localhost:8050",
+            "https://127.0.0.1:8050",
+            "http://localhost:8000",
+            "http://127.0.0.1:8000",
+        ]
+    )
