@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.get_data),
+    path("roadmaps/", views.get_roadmap_data),
 ]
