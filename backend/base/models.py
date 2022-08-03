@@ -13,7 +13,7 @@ class RoadmapItem(models.Model):
         choices=[(choice.name, choice.value) for choice in PageChoices]
     )
     block_name = models.CharField(null=False, blank=False, max_length=100)
-    block_id = models.IntegerField(null=False, blank=False)
+    block_id = models.CharField(null=False, blank=False, max_length=100)
     alt_names = models.CharField(null=True, blank=True, max_length=100)
     thumbnail = models.ImageField(
         null=False, blank=False, upload_to="roadmap-thumbnails"
